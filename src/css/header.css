@@ -1,8 +1,12 @@
 .header {
-  padding: 20px 0;
+  padding: 10px 0;
+  position: sticky;
+  box-shadow: 0 5px 4px -6px #252121;
+  background: rgb(250, 234, 248);
+  background: linear-gradient(90deg, rgba(250, 234, 248, 1) 0%, rgba(251, 170, 222, 1) 50%, rgba(247, 235, 247, 1) 100%);
 }
 
-.container {
+.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,11 +20,19 @@
   display: none;
 }
 
+.social-link {
+  display: none;
+}
+
 .modal-btn {
   background-color: transparent;
   width: 40px;
   height: 40px;
   padding: 0;
+}
+
+.modal-svg {
+  stroke: rgb(143, 3, 124);
 }
 
 
@@ -39,4 +51,22 @@
   .modal-btn {
     display: none;
   }
+}
+
+@media screen and (min-width: 1280px) {
+
+  .social-link {
+    display: flex;
+    justify-content: end;
+  }
+
+  .items-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 52px;
+  }
+
+
+
 }
