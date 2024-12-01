@@ -3,7 +3,7 @@
   position: sticky;
   box-shadow: 0 5px 4px -6px #252121;
   background: rgb(250, 234, 248);
-  background: linear-gradient(90deg, rgba(250, 234, 248, 1) 0%, rgba(251, 170, 222, 1) 50%, rgba(247, 235, 247, 1) 100%);
+    background: linear-gradient(90deg, rgba(250, 234, 248, 1) 0%, rgba(255, 220, 242, 1) 50%, rgba(247, 235, 247, 1) 100%);
 }
 
 .header .container {
