@@ -9,4 +9,5 @@
 
 /* Sections style */
 @import url('./header.css');
+@import url('./mob-menu.css');
 @import url('./back-link.css');
