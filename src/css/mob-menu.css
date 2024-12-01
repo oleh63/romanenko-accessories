@@ -1,14 +1,49 @@
+
 .mob-menu {
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(250, 234, 248, 1) 0%, rgba(251, 170, 222, 1) 50%, rgba(247, 235, 247, 1) 100%);
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease;
+    background: rgb(250, 234, 248);
+        background: linear-gradient(
+            90deg,
+         rgba(250, 234, 248, 1) 0%,
+         rgba(255, 220, 242, 1) 50%,
+         rgba(247, 235, 247, 1) 100%);
+    z-index: 1000;
 }
+
+.mob-menu.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideInFromLeft 0.3s ease;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 
 .container-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 56px;
+    padding: 0 20px;
 }
 
 .close-btn {
