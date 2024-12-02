@@ -37,7 +37,6 @@
     }
 }
 
-
 .container-logo {
     display: flex;
     align-items: center;
@@ -51,7 +50,7 @@
 }
 
 .icon-close {
-    stroke: rgb(143, 3, 124);
+    stroke: rgb(255, 74, 189);
 }
 
 .contacts-menu {
@@ -66,3 +65,19 @@
     align-items: center;
     gap: 32px;
 }
+
+.list-menu {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #292929;
+    padding: 10px;
+}
+
+.list-menu:hover {
+    background-color: rgb(255, 74, 189);
+    border-radius: 6px;
+    color: whitesmoke;
+}
+

@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0;
+  padding: 20px 0;
   position: sticky;
   box-shadow: 0 5px 4px -6px #252121;
   background: rgb(250, 234, 248);
@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 
 .nav-list {
   display: none;
@@ -29,11 +28,15 @@
 }
 
 .modal-svg {
-  stroke: rgb(143, 3, 124);
+  stroke: rgb(255, 74, 189);
 }
 
 
 @media screen and (min-width: 768px) {
+  .header .container {
+    gap: 30px;
+  }
+
   .nav-list {
     display: block;
   }
@@ -42,19 +45,41 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 52px;
+    gap: 32px;
   }
 
   .nav-link {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     color: #313053;
     letter-spacing: 0.5px;
     padding: 10px;
   }
 
   .nav-link:hover {
-    background-color: #8f037c;
+    background-color: rgb(255, 74, 189);
+    border-radius: 6px;
+    color: whitesmoke;
+  }
+
+  .social-link {
+    display: flex;
+  }
+
+  .items-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .link {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #313053;
+  }
+
+  .link:hover {
+    background-color: rgb(255, 74, 189);
     border-radius: 6px;
     color: whitesmoke;
   }
@@ -78,17 +103,10 @@
     gap: 52px;
   }
 
-  .link {
-    font-weight: 400;
-    font-size: 16px;
-    color:#313053;
-    padding: 10px;
-  }
-
-  .link:hover {
-    background-color: #8f037c;
+  .item-link:hover {
+    background-color: rgb(255, 74, 189);
     border-radius: 6px;
-    color:whitesmoke;
+    color: whitesmoke;
   }
 
 
