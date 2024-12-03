@@ -72,6 +72,10 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--color-light-grey);
 }
 
+main {
+    background-color: #fff3fd;
+}
+
 h1,
 h2 {
     font-family: var(--font-heading);
@@ -81,7 +85,7 @@ h2 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 52px;
     line-height: 1.25;
     letter-spacing: 0.03em;
 }
@@ -146,6 +150,7 @@ button {
 }
 
 img {
+    max-width: 100%;
     display: block;
     height: auto;
 }
