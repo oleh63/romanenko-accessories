@@ -95,7 +95,7 @@ catalogList.addEventListener('click', event => {
     const imagesMarkup = product.images
       .map(
         image =>
-          `<li><img src="./img/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
+          `<li><img src="/img/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
       )
       .join('');
 
