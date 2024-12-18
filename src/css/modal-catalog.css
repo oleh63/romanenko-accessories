@@ -1,0 +1,84 @@
+/* Стиль для модального вікна */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Контейнер для модального вікна */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.btn-close-catalog {
+  position: relative;
+  left: 40%;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 18px;
+}
+
+.modal-title {
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+/* Для галереї в модальному вікні */
+.modal-gallery {
+  overflow-y: scroll;
+}
+
+.modal-gallery ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-gallery li {
+  margin-bottom: 24px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-gallery img {
+    width: 80%;
+    border-radius: 16px;
+  }
+
+  .modal-gallery h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-gallery img {
+    width: 50%;
+  }
+}
