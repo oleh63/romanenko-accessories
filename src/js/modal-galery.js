@@ -27,11 +27,39 @@ const productData = {
   },
   hoops: {
     title: 'Обручі',
-    images: ['hoops-card.webp'],
+    images: [
+      'hoops-card.webp',
+      'hoops-1.webp',
+      'hoops-2.webp',
+      'hoops-3.webp',
+      'hoops-4.webp',
+      'hoops-5.webp',
+      'hoops-6.webp',
+      'hoops-7.webp',
+      'hoops-8.webp',
+    ],
   },
   necklaces: {
     title: 'Намиста',
-    images: ['necklaces-card.webp'],
+    images: [
+      'necklaces-card.webp',
+      'necklaces-1.webp',
+      'necklaces-2.webp',
+      'necklaces-3.webp',
+      'necklaces-4.webp',
+      'necklaces-5.webp',
+      'necklaces-6.webp',
+      'necklaces-7.webp',
+      'necklaces-8.webp',
+      'necklaces-9.webp',
+      'necklaces-10.webp',
+      'necklaces-12.webp',
+      'necklaces-13.webp',
+      'necklaces-14.webp',
+      'necklaces-15.webp',
+      'necklaces-16.webp',
+      'necklaces-17.webp',
+    ],
   },
   combs: {
     title: 'Гребінці',
@@ -39,7 +67,16 @@ const productData = {
   },
   pins: {
     title: 'Шпильки',
-    images: ['pins-card.webp'],
+    images: [
+      'pins-card.webp',
+      'pins-1.webp',
+      'pins-2.webp',
+      'pins-3.webp',
+      'pins-4.webp',
+      'pins-5.webp',
+      'pins-6.webp',
+      'pins-7.webp',
+    ],
   },
 };
 
@@ -58,7 +95,7 @@ catalogList.addEventListener('click', event => {
     const imagesMarkup = product.images
       .map(
         image =>
-          `<li><img src="../img/${productType}/${image}" alt="${product.title}" /></li>`
+          `<li><img src="/img/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
       )
       .join('');
 
