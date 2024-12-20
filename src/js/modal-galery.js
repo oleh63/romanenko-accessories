@@ -4,6 +4,7 @@ const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const modalClose = document.getElementById('modal-close');
 const basePath = import.meta.env.BASE_URL;
+const imagePath = basePath.endsWith('/') ? `${basePath}assets/${productType}/${image}` : `${basePath}/assets/${productType}/${image}`;
 
 const productData = {
   branchlet: {
