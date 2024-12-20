@@ -98,8 +98,8 @@ catalogList.addEventListener('click', event => {
       const li = document.createElement('li');
       const img = document.createElement('img');
       const imagePath = basePath.endsWith('/') 
-        ? `${basePath}img/${productType}/${image}` 
-        : `${basePath}/img/${productType}/${image}`;
+        ? `${basePath}assets/${productType}/${image}` 
+        : `${basePath}/assets/${productType}/${image}`;
       img.src = imagePath;
       img.alt = product.title;
 
