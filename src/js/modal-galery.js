@@ -3,7 +3,7 @@ const modal = document.getElementById('product-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const modalClose = document.getElementById('modal-close');
-
+const basePath = import.meta.env.BASE_URL;
 const productData = {
   branchlet: {
     title: 'Гілочки',
@@ -12,7 +12,6 @@ const productData = {
   earrings: {
     title: 'Сережки',
     images: [
-      'earrings-card.webp',
       'earrings-1.webp',
       'earrings-2.webp',
       'earrings-3.webp',
@@ -23,6 +22,7 @@ const productData = {
       'earrings-8.webp',
       'earrings-9.webp',
       'earrings-10.webp',
+      'earrings-card.webp',
     ],
   },
   hoops: {
@@ -95,7 +95,7 @@ catalogList.addEventListener('click', event => {
     const imagesMarkup = product.images
       .map(
         image =>
-          `<li><img src="assets/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
+          `<li><img src="${basePath}img/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
       )
       .join('');
 
