@@ -97,10 +97,7 @@ catalogList.addEventListener('click', event => {
       // Створюємо елементи
       const li = document.createElement('li');
       const img = document.createElement('img');
-      const imagePath = basePath.endsWith('/') 
-        ? `${basePath}assets/${productType}/${image}` 
-        : `${basePath}/assets/${productType}/${image}`;
-      img.src = imagePath;
+      img.src = `${basePath}/img/${image}`;
       img.alt = product.title;
 
       const price = document.createElement('h3');
