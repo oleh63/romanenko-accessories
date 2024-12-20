@@ -93,9 +93,6 @@ catalogList.addEventListener('click', event => {
   if (product) {
     modalTitle.textContent = product.title;
 
-    // Очищуємо галерею перед додаванням нових елементів
-    modalGallery.innerHTML = '';
-
     product.images.forEach(image => {
       // Створюємо елементи
       const li = document.createElement('li');
