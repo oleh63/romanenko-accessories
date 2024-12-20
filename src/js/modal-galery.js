@@ -98,6 +98,8 @@ catalogList.addEventListener('click', event => {
           `<li><img src="${basePath}/assets/${productType}/${image}" alt="${product.title}" /> <h3>Price</h3></li>`
       )
       .join('');
+    console.log(`${basePath}/assets/${productType}/${image}`);
+
 
     modalGallery.innerHTML = imagesMarkup;
 
