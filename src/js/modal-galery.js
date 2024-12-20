@@ -100,7 +100,7 @@ catalogList.addEventListener('click', event => {
       const imagePath = basePath.endsWith('/') 
         ? `${basePath}assets/${productType}/${image}` 
         : `${basePath}/assets/${productType}/${image}`;
-      img.src = `${basePath}img/${productType}/${image}`;
+      img.src = imagePath;
       img.alt = product.title;
 
       const price = document.createElement('h3');
