@@ -3,7 +3,6 @@ const modal = document.getElementById('product-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const modalClose = document.getElementById('modal-close');
-const basePath = import.meta.env.BASE_URL;
 
 const productData = {
   branchlet: {
@@ -97,7 +96,7 @@ catalogList.addEventListener('click', event => {
       // Створюємо елементи
       const li = document.createElement('li');
       const img = document.createElement('img');
-      img.src = `${basePath}img/${image}`;
+      img.src = `${import.meta.env.BASE_URL}/img/${image}`;
       img.alt = product.title;
 
       const price = document.createElement('h3');
