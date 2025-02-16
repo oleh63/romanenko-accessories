@@ -6,8 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
-    base: '/romanenko-accessories/',
-    publicDir: 'src/public',
+
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
