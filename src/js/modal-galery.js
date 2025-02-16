@@ -1,16 +1,22 @@
+// modal-catalog.js
+
+// Отримуємо елементи DOM
 const catalogList = document.querySelector('.list-catalog');
 const modal = document.getElementById('product-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const modalClose = document.getElementById('modal-close');
 
+// Об'єкт з даними про продукти
 const productData = {
   branchlet: {
     title: 'Гілочки',
+    price: 'Price',
     images: ['branchlet-card.webp'],
   },
   earrings: {
     title: 'Сережки',
+    price: 'Price',
     images: [
       'earrings-1.webp',
       'earrings-2.webp',
@@ -27,6 +33,7 @@ const productData = {
   },
   hoops: {
     title: 'Обручі',
+    price: 'Price',
     images: [
       'hoops-card.webp',
       'hoops-1.webp',
@@ -41,6 +48,7 @@ const productData = {
   },
   necklaces: {
     title: 'Намиста',
+    price: 'Price',
     images: [
       'necklaces-card.webp',
       'necklaces-1.webp',
@@ -63,10 +71,12 @@ const productData = {
   },
   combs: {
     title: 'Гребінці',
+    price: 'Price',
     images: ['combs-card.webp'],
   },
   pins: {
     title: 'Шпильки',
+    price: 'Price',
     images: [
       'pins-card.webp',
       'pins-1.webp',
@@ -79,3 +89,38 @@ const productData = {
     ],
   },
 };
+
+// Слухаємо клік на контейнері каталогу (делегування подій)
+catalogList.addEventListener('click', event => {
+  const item = event.target.closest('.item-catalog');
+  if (!item) return;
+
+  const type = item.dataset.type;
+  const product = productData[type];
+
+  if (!product) return;
+
+  modalTitle.textContent = product.title;
+  modalGallery.innerHTML = product.images
+    .map(
+      img => `
+      <li class="modal-item">
+        <img src="/public/img/${img}" alt="${product.title}" class="modal-img"/>
+        <p class="modal-price">${product.price}</p>
+      </li>
+    `
+    )
+    .join('');
+
+  modal.classList.add('open');
+});
+
+modalClose.addEventListener('click', () => {
+  modal.classList.remove('open');
+});
+
+modal.addEventListener('click', e => {
+  if (e.target === modal) {
+    modal.classList.remove('open');
+  }
+});
