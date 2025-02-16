@@ -105,7 +105,7 @@ catalogList.addEventListener('click', event => {
     .map(
       img => `
       <li class="modal-item">
-        <img src="./img/${img}" alt="${product.title}" class="modal-img"/>
+        <img src="/img/${img}" alt="${product.title}" class="modal-img"/>
         <p class="modal-price">${product.price}</p>
       </li>
     `
