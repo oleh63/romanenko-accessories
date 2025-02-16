@@ -3,7 +3,6 @@ const modal = document.getElementById('product-modal');
 const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const modalClose = document.getElementById('modal-close');
-const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const productData = {
   branchlet: {
@@ -80,50 +79,3 @@ const productData = {
     ],
   },
 };
-
-catalogList.addEventListener('click', event => {
-  const catalogItem = event.target.closest('.item-catalog');
-  if (!catalogItem) {
-    return;
-  }
-
-  const productType = catalogItem.dataset.type;
-  const product = productData[productType];
-
-  if (product) {
-    modalTitle.textContent = product.title;
-
-    product.images.forEach(image => {
-      // Створюємо елементи
-      const li = document.createElement('li');
-      const img = document.createElement('img');
-      img.src = `${basePath}img/${image}`;
-      img.alt = product.title;
-
-      const price = document.createElement('h3');
-      price.textContent = 'Price'; // Тут можна вставити реальну ціну, якщо є
-
-      // Додаємо зображення та ціну до елементу <li>
-      li.appendChild(img);
-      li.appendChild(price);
-
-      // Додаємо <li> до галереї
-      modalGallery.appendChild(li);
-    });
-
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
-
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  });
-
-  modal.addEventListener('click', event => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-  });
-});
