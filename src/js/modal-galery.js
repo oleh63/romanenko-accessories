@@ -1,5 +1,5 @@
 // modal-catalog.js
-
+import branchletcard from '../img/branchletcard.webp';
 // Отримуємо елементи DOM
 const catalogList = document.querySelector('.list-catalog');
 const modal = document.getElementById('product-modal');
@@ -12,80 +12,80 @@ const productData = {
   branchlet: {
     title: 'Гілочки',
     price: 'Price',
-    images: ['branchlet-card.webp'],
+    images: [branchletcard],
   },
   earrings: {
     title: 'Сережки',
     price: 'Price',
     images: [
-      'earrings-1.webp',
-      'earrings-2.webp',
-      'earrings-3.webp',
-      'earrings-4.webp',
-      'earrings-5.webp',
-      'earrings-6.webp',
-      'earrings-7.webp',
-      'earrings-8.webp',
-      'earrings-9.webp',
-      'earrings-10.webp',
-      'earrings-card.webp',
+      'earrings1.webp',
+      'earrings2.webp',
+      'earrings3.webp',
+      'earrings4.webp',
+      'earrings5.webp',
+      'earrings6.webp',
+      'earrings7.webp',
+      'earrings8.webp',
+      'earrings9.webp',
+      'earrings10.webp',
+      'earringscard.webp',
     ],
   },
   hoops: {
     title: 'Обручі',
     price: 'Price',
     images: [
-      'hoops-card.webp',
-      'hoops-1.webp',
-      'hoops-2.webp',
-      'hoops-3.webp',
-      'hoops-4.webp',
-      'hoops-5.webp',
-      'hoops-6.webp',
-      'hoops-7.webp',
-      'hoops-8.webp',
+      'hoopscard.webp',
+      'hoops1.webp',
+      'hoops2.webp',
+      'hoops3.webp',
+      'hoops4.webp',
+      'hoops5.webp',
+      'hoops6.webp',
+      'hoops7.webp',
+      'hoops8.webp',
     ],
   },
   necklaces: {
     title: 'Намиста',
     price: 'Price',
     images: [
-      'necklaces-card.webp',
-      'necklaces-1.webp',
-      'necklaces-2.webp',
-      'necklaces-3.webp',
-      'necklaces-4.webp',
-      'necklaces-5.webp',
-      'necklaces-6.webp',
-      'necklaces-7.webp',
-      'necklaces-8.webp',
-      'necklaces-9.webp',
-      'necklaces-10.webp',
-      'necklaces-12.webp',
-      'necklaces-13.webp',
-      'necklaces-14.webp',
-      'necklaces-15.webp',
-      'necklaces-16.webp',
-      'necklaces-17.webp',
+      'necklacescard.webp',
+      'necklaces1.webp',
+      'necklaces2.webp',
+      'necklaces3.webp',
+      'necklaces4.webp',
+      'necklaces5.webp',
+      'necklaces6.webp',
+      'necklaces7.webp',
+      'necklaces8.webp',
+      'necklaces9.webp',
+      'necklaces10.webp',
+      'necklaces12.webp',
+      'necklaces13.webp',
+      'necklaces14.webp',
+      'necklaces15.webp',
+      'necklaces16.webp',
+      'necklaces17.webp',
     ],
   },
   combs: {
     title: 'Гребінці',
     price: 'Price',
-    images: ['combs-card.webp'],
+    images: ['combscard.webp'],
   },
   pins: {
     title: 'Шпильки',
     price: 'Price',
     images: [
-      'pins-card.webp',
-      'pins-1.webp',
-      'pins-2.webp',
-      'pins-3.webp',
-      'pins-4.webp',
-      'pins-5.webp',
-      'pins-6.webp',
-      'pins-7.webp',
+      'pinscard.webp',
+      'pins1.webp',
+      'pins2.webp',
+      'pins3.webp',
+      'pins4.webp',
+      'pins5.webp',
+      'pins6.webp',
+      'pins7.webp',
     ],
   },
 };
@@ -105,7 +105,7 @@ catalogList.addEventListener('click', event => {
     .map(
       img => `
       <li class="modal-item">
-        <img src="/img/${img}" alt="${product.title}" class="modal-img"/>
+        <img src="${img}" alt="${product.title}" class="modal-img"/>
         <p class="modal-price">${product.price}</p>
       </li>
     `
