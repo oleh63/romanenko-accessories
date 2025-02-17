@@ -1,17 +1,11 @@
 .header {
   border-bottom: 1px solid rgb(243, 2, 155);
-  padding: 20px 0;
+  padding: 20px 10px;
   position: sticky;
-  /* background: rgb(250, 234, 248);
-  background: linear-gradient(
-    90deg,
-    rgba(250, 234, 248, 1) 0%,
-    rgba(255, 220, 242, 1) 50%,
-    rgba(247, 235, 247, 1) 100%
-  ); */
+  max-width: 100%;
 }
 
-.header .container {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,7 +31,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header .container {
+  .container {
     gap: 30px;
   }
 
@@ -78,14 +72,16 @@
   .link {
     padding: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 12px;
     color: #313053;
   }
 
+  .link span {
+    margin-left: 5px;
+  }
+
   .link:hover {
-    background-color: rgb(255, 74, 189);
-    border-radius: 6px;
-    color: whitesmoke;
+    border: 1px solid rgb(255, 74, 189);
   }
 
   .modal-btn {
@@ -106,7 +102,7 @@
     gap: 52px;
   }
 
-  .item-link:hover {
+  .link:hover {
     background-color: rgb(255, 74, 189);
     border-radius: 6px;
     color: whitesmoke;

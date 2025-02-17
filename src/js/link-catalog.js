@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const mobMenu = document.querySelector('.mob-menu');
-  const btnCatalog = document.querySelector('.btn-link-catalog');
+  const btnCatalog = document.querySelector('.btn-link-menu');
 
   btnCatalog.addEventListener('click', event => {
     event.preventDefault();
