@@ -1,83 +1,81 @@
-
 .mob-menu {
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 0.3s ease;
-    background: rgb(250, 234, 248);
-        background: linear-gradient(
-            90deg,
-         rgba(250, 234, 248, 1) 0%,
-         rgba(255, 220, 242, 1) 50%,
-         rgba(247, 235, 247, 1) 100%);
-    z-index: 1000;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease;
+  background-color: white;
+  z-index: 1000;
 }
 
 .mob-menu.is-open {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    animation: slideInFromLeft 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideInFromLeft 0.3s ease;
 }
 
 @keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(-100%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .container-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 56px;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  padding: 0 20px;
 }
 
 .close-btn {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .icon-close {
-    stroke: rgb(255, 74, 189);
+  fill: rgb(255, 74, 189);
 }
 
 .contacts-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .items-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 .list-menu {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #292929;
-    padding: 10px;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #292929;
+  padding: 10px;
+}
+
+.btn-link-catalog {
+  background-color: transparent;
 }
 
 .list-menu:hover {
-    background-color: rgb(255, 74, 189);
-    border-radius: 6px;
-    color: whitesmoke;
+  background-color: rgb(255, 74, 189);
+  border-radius: 6px;
+  color: whitesmoke;
 }
-

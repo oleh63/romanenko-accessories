@@ -37,6 +37,7 @@ li {
 }
 
 body {
+  background-color: white;
   overflow-x: hidden;
   font-family: var(--font-main);
   font-weight: 300;
@@ -74,7 +75,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 main {
-  background-color: #fff3fd;
+  background-color: transparent;
 }
 
 h1,

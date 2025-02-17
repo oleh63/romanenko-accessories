@@ -33,11 +33,11 @@
   left: 40%;
   background-color: transparent;
   border: none;
-  margin-bottom: 18px;
 }
 
-.modal-title {
+.title {
   font-size: 36px;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
