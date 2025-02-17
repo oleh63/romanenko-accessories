@@ -1,3 +1,5 @@
+.hero {
+}
 .hero-container {
   display: flex;
   flex-direction: column;
