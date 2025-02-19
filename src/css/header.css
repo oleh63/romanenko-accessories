@@ -46,18 +46,32 @@
     gap: 32px;
   }
 
+  .btn-link-menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .btn-link-menu:hover,
+  .btn-link-menu:focus,
+  .btn-link-menu:active {
+    border-bottom: 3px solid rgb(255, 74, 189);
+  }
+
+  .icon-social {
+    fill: rgb(255, 74, 189);
+  }
+
   .nav-link {
     font-weight: 400;
     font-size: 20px;
     color: #313053;
     letter-spacing: 0.5px;
     padding: 10px;
-  }
-
-  .nav-link:hover {
-    background-color: rgb(255, 74, 189);
-    border-radius: 6px;
-    color: whitesmoke;
   }
 
   .social-link {
@@ -70,18 +84,27 @@
   }
 
   .link {
+    display: flex;
+    align-items: center;
     padding: 10px;
     font-weight: 400;
     font-size: 12px;
-    color: #313053;
+    color: rgb(255, 74, 189);
+    transition: box-shadow 0.2s ease;
+    border-radius: 50%;
+  }
+  .link svg.icon-social {
+    fill: currentColor;
+    transition: fill 0.2 ease;
+  }
+  .link:hover {
+    color: aliceblue;
+    background-color: rgba(255, 74, 189);
+    box-shadow: 0 0 10px 2px rgba(255, 74, 189);
   }
 
   .link span {
     margin-left: 5px;
-  }
-
-  .link:hover {
-    border: 1px solid rgb(255, 74, 189);
   }
 
   .modal-btn {
@@ -104,7 +127,7 @@
 
   .link:hover {
     background-color: rgb(255, 74, 189);
-    border-radius: 6px;
+    border-radius: 50%;
     color: whitesmoke;
   }
 }
