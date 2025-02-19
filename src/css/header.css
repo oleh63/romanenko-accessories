@@ -46,9 +46,10 @@
     gap: 32px;
   }
 
-  .btn-link-menu {
+  .btn-link-nav {
     display: flex;
     align-items: center;
+    gap: 5px;
     cursor: pointer;
     position: relative;
     padding-bottom: 5px;
@@ -56,9 +57,9 @@
     transition: border-color 0.3s ease;
   }
 
-  .btn-link-menu:hover,
-  .btn-link-menu:focus,
-  .btn-link-menu:active {
+  .btn-link-nav:hover,
+  .btn-link-nav:focus,
+  .btn-link-nav:active {
     border-bottom: 3px solid rgb(255, 74, 189);
   }
 
