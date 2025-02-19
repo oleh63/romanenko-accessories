@@ -1,5 +1,5 @@
 .mob-menu {
-  padding: 10px 0;
+  padding: 20px 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,22 +56,35 @@
 .items-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  justify-content: center;
   gap: 32px;
 }
 
 .list-menu {
   gap: 20px;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
   color: #292929;
   padding: 10px;
 }
 
+.contact-menu span {
+  margin-left: 5px;
+}
+.btn-link-menu {
+  background-color: transparent;
+}
+
+.btn-link-menu span {
+  margin-left: 5px;
+}
+
 .btn-link-catalog {
   background-color: transparent;
+  fill: rgb(255, 74, 189);
 }
 
 .list-menu:hover {
