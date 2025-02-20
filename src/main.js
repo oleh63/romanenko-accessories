@@ -1,3 +1,5 @@
-import './js/mobile-menu.js';
-import './js/link-catalog.js';
-import './js/modal-galery.js';
+// index.js
+import { productData } from './js/catalog-prod/productData.js';
+import { setupModal } from './js/catalog-prod/catalogModal';
+
+setupModal(productData);
